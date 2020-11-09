@@ -1,0 +1,42 @@
+<script>
+     var numero=prompt("ex1. digite um numero"), preco=prompt("ex2. Digite o Preco"), desc=prompt("ex2. Digite o disconto")
+    var p=Number.parseInt(prompt("ex3. digite o 1º número"));
+    var ss=Number.parseInt(prompt("exe3. digite o 2º número"));
+    var i=Number.parseInt(prompt("ex4. digite valor  para a tabuada"));
+    
+    
+    function antsus(){   
+        var suc= Number.parseInt(numero);   
+        var novo= Number.parseFloat(preco);
+        var novo1=Number.parseFloat(desc);
+       
+        var desco= (novo1/100)
+        console.log("-----------------------EXERCICIO NÚMERO 1--------------------------------");
+        console.log("o Anticessor do ",numero," é ",Number.parseInt(numero -1));
+        console.log("o Sucessor do "+numero+" é ",suc+1);
+        console.log("-----------------------EXERCICIO NÚMERO 2--------------------------------");
+        console.log("o novo preço é ",novo-desco); exe3()
+    }
+    function exe3(){
+        if(p<ss){
+             var n=p+1,m=ss-1;
+        console.log("-----------------------EXERCICIO NÚMERO 3--------------------------------");
+            
+           while(n<=m){
+
+             console.log("o Nº ",n," esta entre",p," e ",ss)
+             n++;
+           }
+         }
+         const b = 10
+        console.log("-----------------------EXERCICIO NÚMERO 4--------------------------------");
+
+        for(var vl =1; vl<=b;vl++){
+
+            console.log(i," x ",vl," = ",vl*i)
+           
+         }
+         console.log("-----------------------FIM DOS EXERCICIOS--------------------------------");
+    }
+    antsus()
+</script>
